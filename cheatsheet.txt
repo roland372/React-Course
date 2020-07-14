@@ -1,0 +1,14 @@
+To install react globally on your machine
+npm install create-react-app -g 
+
+Components are a functions that return JSX code.
+
+When writing JSX we're not actually using HTML tags like div or h1, they are being provided by React, and behind scenes are converted into actual HMTL.
+
+Only changing state and props will lead React to update DOM.
+
+Stateful component is a component that manages state using class or functions with hooks.
+Stateless are componets that have no state management like Person.js
+Usually you should use as many stateless components that don't affect your state so it's more predictable making your app more easy to maintain and manage.
+
+Styles will be injected dynamically by webpack that manages imports that we add, we don't add them manually inside our HTML files.
