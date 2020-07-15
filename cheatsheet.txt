@@ -14,3 +14,6 @@ Usually you should use as many stateless components that don't affect your state
 Styles will be injected dynamically by webpack that manages imports that we add, we don't add them manually inside our HTML files.
 
 We don't want to mutate/edit original state of our components because this can lead to many unpredictible errors, instead we should make a copy of the state before manipulating it.
+
+To be able to not use css classes globally and instead use them in specific places in our app we add module to filename App.module.css, and then import classes from './App.module.css', and then we can pass classes to any component that we want eg. 
+className={classes.red}
