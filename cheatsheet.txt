@@ -12,3 +12,5 @@ Stateless are componets that have no state management like Person.js
 Usually you should use as many stateless components that don't affect your state so it's more predictable making your app more easy to maintain and manage.
 
 Styles will be injected dynamically by webpack that manages imports that we add, we don't add them manually inside our HTML files.
+
+We don't want to mutate/edit original state of our components because this can lead to many unpredictible errors, instead we should make a copy of the state before manipulating it.
